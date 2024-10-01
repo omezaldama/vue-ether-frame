@@ -198,7 +198,8 @@ const handleMinimize = (_: MouseEvent) => {
   cursor: pointer;
   flex-basis: 1;
   font-weight: bolder;
-  height: 80%;
+  height: 15px;
+  max-height: 80%;
   text-align: center;
   width: 15px;
 }
