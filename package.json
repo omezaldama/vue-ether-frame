@@ -1,8 +1,35 @@
 {
   "name": "vue-ether-frame",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Open source frame component for Vue.js",
+  "main": "./dist/vue-ether-frame.umd.js",
+  "module": "./dist/vue-ether-frame.js",
+  "types": "./dist/vue-ether-frame.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-ether-frame.js",
+      "require": "./dist/vue-ether-frame.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "typescript",
+    "frame",
+    "window"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/omezaldama/vue-ether-frame",
+  "author": "Oscar Meza Aldama",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.4"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -12,9 +39,11 @@
     "vue": "^3.4.37"
   },
   "devDependencies": {
+    "@types/node": "^22.7.4",
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.3",
     "vue-tsc": "^2.0.29"
   }
 }
